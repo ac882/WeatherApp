@@ -1,4 +1,3 @@
-from venv import create
 import requests
 import json
 import os  # api management
