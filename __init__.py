@@ -19,7 +19,6 @@ def check_api_exists():
                     return True
     
 
-
 if __name__ == "__main__":
     create_api_file()
     if check_api_exists() == True:
