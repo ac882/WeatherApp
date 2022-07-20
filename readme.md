@@ -8,6 +8,7 @@ This is a simple python app that uses the following:
 ![Weather App Fahrenheit](https://i.gyazo.com/67e1712150b6c54e993f6972cff23f65.png)
 
 # How to run the app
-1. Run the project for the first time and it will create a .env file
-2. You need to access to .env file and change "YOUR_API_KEY" with your API Key
-3. Run the project again and everything will be fine
+1. Open the project folder with VSCode or other editor
+2. Run the project for the first time and it will create a .env file
+3. You need to access to .env file and change "YOUR_API_KEY" with your API Key
+4. Run the project again and everything will be fine
