@@ -2,7 +2,7 @@
 
 This is a simple python app that uses the following:
 - OpenWeather API to get the information
-- Tkinter to build the app
+- Tkinter to build the UI
 
 ## How to run the app
 1. Open the project folder with VSCode or other editor
