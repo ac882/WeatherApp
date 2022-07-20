@@ -4,8 +4,7 @@ This is a simple python app that uses the following:
 - OpenWeather API to get the information
 - Tkinter to build the app
 
-![Weather App](https://i.imgur.com/SNOl3qK.png)
-
+![Weather App](https://i.gyazo.com/7bef8204f72949ce2cfc78d69437f27c.mp4)
 
 # How to run the app
 1. Run the project for the first time and it will create a .env file
