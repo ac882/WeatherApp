@@ -1,7 +1,7 @@
 from distutils.log import error
 from tkinter import *
 from tkinter import messagebox
-from app import Weather, CityNotFound
+from app import APINotFound, Weather, CityNotFound
 from tkinter import messagebox
 
 
@@ -80,6 +80,8 @@ class UI(Frame):
                     self.output_field.pack()
                     self.c1.pack()
             except CityNotFound as err:
+                self.error(err.msg)
+            except APINotFound as err:
                 self.error(err.msg)
         else:
             self.error("The city cannot be empty.")

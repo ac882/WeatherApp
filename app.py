@@ -3,7 +3,7 @@ import json
 import os  # api management
 from dotenv import load_dotenv  # api management
 import os.path
-
+import exceptions as exc
 
 def configure():
     load_dotenv()
@@ -19,6 +19,8 @@ class Weather:
     def handle_error(self, code):
         if code == 404:
             raise CityNotFound(code)
+        elif code == 401:
+            raise APINotFound(code)
 
     def showWeather(self, city, isFahrenheit):
         try:
@@ -64,9 +66,14 @@ class Weather:
         print(weather)
         return weather
 
-
 class CityNotFound(Exception):
     def __init__(self, code, msg="City not found"):
+        self.code = code
+        self.msg = msg
+        super().__init__(self.msg)
+
+class APINotFound(Exception):
+    def __init__(self, code, msg="Your API Key is incorrect or is not activated."):
         self.code = code
         self.msg = msg
         super().__init__(self.msg)
